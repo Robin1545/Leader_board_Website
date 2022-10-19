@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  background-color: #f3f1ff;
+}
+
+#TheTop {
+  max-width: 870px;
+  margin: 0 auto;
+}
+
+.navbar img {
+  width: 40px;
+}
+
+#navbarText .navbar-nav .nav-item .nav-link {
+  color: white;
+  position: relative;
+  margin: 5px;
+}
+@media (min-width: 992px) {
+  #navbarText .navbar-nav .nav-item .nav-link::after {
+    content: "";
+    background-color: white;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    transition: 0.4s ease;
+  }
+  #navbarText .navbar-nav .nav-item .nav-link:hover:after {
+    left: 0;
+    width: 100%;
+  }
+  .navImage img {
+    margin-left: 20px;
+  }
+}
+
+.navImage img {
+  width: 51px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+section .row img {
+  width: 56px;
+}
+
+main {
+  position: relative;
+  top: 30px;
+  max-width: 870px;
+  height: 679px;
+  border-radius: 5px;
+}
+
+.row .col-md-4 p {
+  position: relative;
+  top: 8px;
+  font-weight: 600;
+}
+
+@media (576px <= width <= 768px) {
+  .top-blog .row .col-sm-6 {
+    flex-direction: column;
+  }
+  .top-blog .row .col-sm-6 h5 {
+    width: 200px;
+  }
+}
+#title-name {
+  position: relative;
+  top: -5px;
+}
+
+.cardPBg {
+  background-color: #ffe4e8;
+  color: #ff4a60;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.cardIconDiv {
+  position: relative;
+  top: -8px;
+}
+.card {
+  border: none;
+  border-radius: 15px;
+  filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05));
+  transition: 0.4s ease;
+}
+
+.card:hover {
+  box-shadow: 0px 1px 15px rgb(206, 205, 205);
+}
+
+@media (576px <= width <= 768px) {
+  .card {
+    flex-basis: 300px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (width < 576px) {
+  .card {
+    width: 300px;
+    margin-bottom: 15px;
+    position: relative;
+    left: 70px;
+  }
+}
